@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc && vite build",
+		"build": "tsc && vite build && cp -r articles docs",
 		"preview": "vite preview",
 		"comp": "node ./scripts/comp.cjs",
 		"up": "yarn add frame3 && yarn add -D vite-plugin-frame3"

@@ -1,5 +1,14 @@
 # Frame3 文档
 
+## 配置
+
+- 首先`yarn create vite`创建一个空的原生 ts 的项目 (目前只支持 vite 打包)
+- 然后再`yarn add frame3 vite-plugin-frame3`
+- 在 vite.config.ts 的 plugin 里添加`frame3()` (啥名都行, 反正是默认导出)
+- 在 tsconfig.json 里添加`"jsx": "preserve"`和`"jsxImportSource": "frame3"` (这两个是对 tsx 进行编译和智能提示的)
+
+## API
+
 - ### reactive
 
 ```typescript
