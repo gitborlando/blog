@@ -1,7 +1,8 @@
 import { $ref, effect } from 'frame3'
-import hljs from 'highlight.js'
 import MD from 'markdown-it'
 import './doc.css'
+//@ts-ignore
+import hljs from 'https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/+esm'
 
 type IDoc = {
 	md: string
@@ -13,14 +14,13 @@ export const Doc = ({ md }: IDoc) => {
 		if (!$div) return
 		$div.innerHTML = new MD({
 			highlight: function (str, lang) {
-				if (lang && hljs.getLanguage(lang)) {
-					try {
-						return hljs.highlight(str, { language: 'ts', ignoreIllegals: true }).value
-					} catch (__) {}
-				}
-				return '' // 使用额外的默认转义
+				if (!lang || !hljs.getLanguage(lang)) return ''
+				try {
+					return hljs.highlight(str, { language: lang, ignoreIllegals: true }).value
+				} catch (__) {}
 			},
 		}).render(md)
 	})
+
 	return <div ref={$div} classes={'markdown-body'}></div>
 }
