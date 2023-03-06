@@ -15,7 +15,7 @@ export const Doc = ({ md }: IDoc) => {
 			highlight: function (str, lang) {
 				if (lang && hljs.getLanguage(lang)) {
 					try {
-						return hljs.highlight(lang, str).value
+						return hljs.highlight(str, { language: 'ts', ignoreIllegals: true }).value
 					} catch (__) {}
 				}
 				return '' // 使用额外的默认转义
