@@ -8,18 +8,14 @@ type IFlex = JSX.HTMLAttributes<any> & {
 	children?: any
 }
 
-export const Flex = ({ as = 'div', layout, children, className, ...rest }: IFlex) => {
+export const Flex = ({ as = 'div', layout, children, classes = [], ...rest }: IFlex) => {
 	return () =>
 		h(
 			as,
 			{
-				className: cls('flex', className, layout),
+				classes: ['flex', layout].concat(classes),
 				...rest,
 			},
 			[children]
 		)
-}
-
-function cls(...args: any[]) {
-	return args.join(' ')
 }

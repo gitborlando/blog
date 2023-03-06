@@ -246,6 +246,24 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@types/linkify-it@*":
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/@types/linkify-it/-/linkify-it-3.0.2.tgz#fd2cd2edbaa7eaac7e7f3c1748b52a19143846c9"
+  integrity sha512-HZQYqbiFVWufzCwexrvh694SOim8z2d+xJl5UNamcvQFejLY/2YUtzXHYi3cHdI7PMlS8ejH2slRAOJQ32aNbA==
+
+"@types/markdown-it@^12.2.3":
+  version "12.2.3"
+  resolved "https://registry.npmjs.org/@types/markdown-it/-/markdown-it-12.2.3.tgz#0d6f6e5e413f8daaa26522904597be3d6cd93b51"
+  integrity sha512-GKMHFfv3458yYy+v/N8gjufHO6MSZKCOXpZc5GXIWWy8uldwfmPn98vp81gZ5f9SVw8YYBctgfJ22a2d7AOMeQ==
+  dependencies:
+    "@types/linkify-it" "*"
+    "@types/mdurl" "*"
+
+"@types/mdurl@*":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@types/mdurl/-/mdurl-1.0.2.tgz#e2ce9d83a613bacf284c7be7d491945e39e1f8e9"
+  integrity sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==
+
 "@types/node@^18.14.5":
   version "18.14.6"
   resolved "https://registry.npmjs.org/@types/node/-/node-18.14.6.tgz#ae1973dd2b1eeb1825695bb11ebfb746d27e3e93"
@@ -257,6 +275,11 @@ ansi-styles@^3.2.1:
   integrity sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==
   dependencies:
     color-convert "^1.9.0"
+
+argparse@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
+  integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
 
 async@^3.2.4:
   version "3.2.4"
@@ -312,6 +335,11 @@ debug@^4.1.0:
   dependencies:
     ms "2.1.2"
 
+entities@~3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/entities/-/entities-3.0.1.tgz#2b887ca62585e96db3903482d336c1006c3001d4"
+  integrity sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==
+
 esbuild@^0.16.14:
   version "0.16.17"
   resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.16.17.tgz#fc2c3914c57ee750635fee71b89f615f25065259"
@@ -345,10 +373,10 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==
 
-frame3-compiler-sfc@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/frame3-compiler-sfc/-/frame3-compiler-sfc-1.1.1.tgz#57531c98da3f2eb3e8d2155838f4cc1cffbd1671"
-  integrity sha512-Ocm5ibFiPwFiB/QBBhmGGI8kDwOfhh4EgjO1H8MvcIItC4nJC3505JovSUj0qMk0mDmtDvD/7NN8Wyp2kqA0Hw==
+frame3-compiler-sfc@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.npmjs.org/frame3-compiler-sfc/-/frame3-compiler-sfc-1.1.5.tgz#1a500a2f5ecf9aab225294fe4f6a504e5e32759f"
+  integrity sha512-IUnc3rcOs5LOafSJ4V6o1aKqHmhWUg1o5HRxiDRn/WBTs7v05D47y6/fEvf6NT1CsQX3MKBDGzxc9iVfBxlY7Q==
   dependencies:
     "@babel/generator" "^7.20.14"
     "@babel/parser" "^7.20.15"
@@ -361,18 +389,18 @@ frame3-compiler-sfc@1.1.1:
     process "^0.11.10"
     string-iterator "^0.0.1"
 
-frame3-runtime-core@1.1.3:
-  version "1.1.3"
-  resolved "https://registry.npmjs.org/frame3-runtime-core/-/frame3-runtime-core-1.1.3.tgz#1f1653ac5f2026da91d3582784f0b13ad6e4094b"
-  integrity sha512-kl8rK1s7oJFtYkdHCThLOkYbCThpOPmr9wHTEEgRXLAs7ppcUwx8MQxo+rJNRAfFXQa8U+17UnuVxI+vGxM9gg==
+frame3-runtime-core@1.1.8:
+  version "1.1.8"
+  resolved "https://registry.npmjs.org/frame3-runtime-core/-/frame3-runtime-core-1.1.8.tgz#5f832268141c016295c20415a9ddb2e656f77330"
+  integrity sha512-npKMRd64lSHsE9VrgdHqCO/HA4Zda3UvFEXK06HBO8YhVmFENpDt+oasoq+IgRMI5Pk3AU1lGwug4KpWX0YlvQ==
 
-frame3@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.npmjs.org/frame3/-/frame3-1.1.3.tgz#449fca2046fa9149054015e5688643c28e16b9a1"
-  integrity sha512-8EP7mYi6uDokNIdoE/wVDHCS8BPKy0NvngxzSQSVBKgxKxamZwEuy/EAJPMq3S3D0W+n76dZTUZO+sdlndgymQ==
+frame3@^1.1.6:
+  version "1.1.9"
+  resolved "https://registry.npmjs.org/frame3/-/frame3-1.1.9.tgz#452c3a05ac030fbb3f42c492adf590a2b7fc91d7"
+  integrity sha512-vT+mVYuQJDawt3DNx2ydyyKcVZPEPYrL1uHgYiG67Y61aUK81oNjBUWCL4M+alIwbDkSUg2WnNnvpc8jQDBdcQ==
   dependencies:
-    frame3-compiler-sfc "1.1.1"
-    frame3-runtime-core "1.1.3"
+    frame3-compiler-sfc "1.1.5"
+    frame3-runtime-core "1.1.8"
 
 fsevents@~2.3.2:
   version "2.3.2"
@@ -383,6 +411,11 @@ function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
+
+github-markdown-css@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.npmjs.org/github-markdown-css/-/github-markdown-css-5.2.0.tgz#9f9e30f16cbc1d3b76110667b7c36ca3d96c9cdc"
+  integrity sha512-hq5RaCInSUZ48bImOZpkppW2/MT44StRgsbsZ8YA4vJFwLKB/Vo3k7R2t+pUGqO+ThG0QDMi96TewV/B3vyItg==
 
 globals@^11.1.0:
   version "11.12.0"
@@ -400,6 +433,11 @@ has@^1.0.3:
   integrity sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
   dependencies:
     function-bind "^1.1.1"
+
+highlight.js@^11.7.0:
+  version "11.7.0"
+  resolved "https://registry.npmjs.org/highlight.js/-/highlight.js-11.7.0.tgz#3ff0165bc843f8c9bce1fd89e2fda9143d24b11e"
+  integrity sha512-1rRqesRFhMO/PRF+G86evnyJkCgaZFOI+Z6kdj15TA18funfoqJXvgPCLSf0SWq3SRfg1j3HlDs8o4s3EGq1oQ==
 
 ieee754@^1.2.1:
   version "1.2.1"
@@ -423,10 +461,33 @@ jsesc@^2.5.1:
   resolved "https://registry.npmjs.org/jsesc/-/jsesc-2.5.2.tgz#80564d2e483dacf6e8ef209650a67df3f0c283a4"
   integrity sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==
 
+linkify-it@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/linkify-it/-/linkify-it-4.0.1.tgz#01f1d5e508190d06669982ba31a7d9f56a5751ec"
+  integrity sha512-C7bfi1UZmoj8+PQx22XyeXCuBlokoyWQL5pWSP+EI6nzRylyThouddufc2c1NDIcP9k5agmN9fLpA7VNJfIiqw==
+  dependencies:
+    uc.micro "^1.0.1"
+
+markdown-it@^13.0.1:
+  version "13.0.1"
+  resolved "https://registry.npmjs.org/markdown-it/-/markdown-it-13.0.1.tgz#c6ecc431cacf1a5da531423fc6a42807814af430"
+  integrity sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q==
+  dependencies:
+    argparse "^2.0.1"
+    entities "~3.0.1"
+    linkify-it "^4.0.1"
+    mdurl "^1.0.1"
+    uc.micro "^1.0.5"
+
 mdn-data@2.0.23:
   version "2.0.23"
   resolved "https://registry.npmjs.org/mdn-data/-/mdn-data-2.0.23.tgz#dfb6c41e50a0edb808cf340973ab29321b70808e"
   integrity sha512-IonVb7pfla2U4zW8rc7XGrtgq11BvYeCxWN8HS+KFBnLDE7XDK9AAMVhRuG6fj9BBsjc69Fqsp6WEActEdNTDQ==
+
+mdurl@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
+  integrity sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==
 
 ms@2.1.2:
   version "2.1.2"
@@ -515,12 +576,17 @@ typescript@^4.9.3:
   resolved "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
-vite-plugin-frame3@^1.1.1:
-  version "1.1.2"
-  resolved "https://registry.npmjs.org/vite-plugin-frame3/-/vite-plugin-frame3-1.1.2.tgz#934788b48348aeab34eeda069b3a019b41f33173"
-  integrity sha512-Dmfe8sFzq2zt9R7CsfS3mw3GipmuNQuW8eoAcsCsEe1ZdvgsB1TtzwkX2/PvyBtOBJNh0QMzjXh72+pQdBMt9A==
+uc.micro@^1.0.1, uc.micro@^1.0.5:
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/uc.micro/-/uc.micro-1.0.6.tgz#9c411a802a409a91fc6cf74081baba34b24499ac"
+  integrity sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
+
+vite-plugin-frame3@^1.1.5:
+  version "1.1.7"
+  resolved "https://registry.npmjs.org/vite-plugin-frame3/-/vite-plugin-frame3-1.1.7.tgz#4af3f0b41b92862b5c9767ba33ac41ba1570fd68"
+  integrity sha512-sLPCE/sajp5o7BSdKxw6QyQqK5ZiwpykdrOoRmMh7rFzuWs+STdqhsd1/JFCYB0AMiXOeMcYSyy2IfuHgjJ4dg==
   dependencies:
-    frame3-compiler-sfc "1.1.1"
+    frame3-compiler-sfc "1.1.5"
     vite "^4.1.4"
 
 vite@^4.1.0, vite@^4.1.4:
