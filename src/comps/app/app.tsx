@@ -1,6 +1,7 @@
 import { Router } from 'frame3'
 import { Flex } from '~/widget/flex/flex'
 import myy from '../../assets/myy.png'
+import { Blog } from '../blog/blog'
 import { Frame3 } from '../frame3/frame3'
 import { Navi } from '../navi/navi'
 import './app.css'
@@ -22,14 +23,7 @@ export const App = ({}: IApp) => {
 								</>
 							)}></Router>
 					<Router path='frame3doc' component={Frame3}></Router>
-					<Router
-						path='blog'
-						component={() => () =>
-							(
-								<>
-									<img src={myy}></img> <h1>开发中...</h1>
-								</>
-							)}></Router>
+					<Router path='blog' component={Blog}></Router>
 				</Flex>
 			</Flex>
 		</Flex>

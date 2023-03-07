@@ -1,12 +1,11 @@
-import { docsPath } from '~/shared'
+import { useFetch } from '~/shared'
 import { Doc } from '../doc/doc'
 import './frame3.css'
 
 type IFrame3 = {}
 
 export const Frame3 = ({}: IFrame3) => {
-	let $md = ''
-	fetch(docsPath('frame3.md')).then(async (r) => ($md = await r.text()))
+	let $md = useFetch('frame3.md')
 
 	return (
 		<div classes='frame3'>

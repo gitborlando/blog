@@ -12,5 +12,5 @@ export default defineConfig({
 	build: {
 		outDir: 'docs',
 	},
-	base: '/blog',
+	...(process.env.NODE_ENV === 'production' && { base: '/blog' }),
 })

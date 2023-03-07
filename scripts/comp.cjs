@@ -8,12 +8,13 @@ const Uname = name[0].toUpperCase() + name.slice(1)
 if (existsSync(`${path}\\${name}`)) process.exit(-1)
 mkdirSync(`${path}/${name}`)
 
-const tpl = `import './${name}.css'
+const tpl = `import { Flex } from '~/widget/flex/flex'
+import './${name}.css'
 
 type I${Uname} = {}
 
 export const ${Uname} = ({}: I${Uname}) => {
-  return <div class='${name}'></div>
+  return <Flex layout='c' classes='${name}'></Flex>
 }
 `
 

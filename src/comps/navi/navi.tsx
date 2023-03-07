@@ -1,3 +1,4 @@
+import { $reactive } from 'frame3'
 import { Flex } from '~/widget/flex/flex'
 import shiyangyang from '../../assets/shiyangyang.jpeg'
 import './navi.css'
@@ -13,13 +14,13 @@ export const Navi = ({}: INavi) => {
 				</Flex>
 				<Link hash=''>主页</Link>
 				<Link hash='frame3doc'>frame3</Link>
-				<Link hash='blog'>blog</Link>
+				<Link hash='blog'>博客</Link>
 			</Flex>
 		</Flex>
 	)
 }
 
-let $currentHash = location.hash.slice(1)
+let $currentHash = $reactive(location.hash.slice(1))
 window.addEventListener('hashchange', () => {
 	$currentHash = location.hash.slice(1)
 })

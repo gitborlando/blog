@@ -373,10 +373,10 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==
 
-frame3-compiler-sfc@1.1.5:
-  version "1.1.5"
-  resolved "https://registry.npmjs.org/frame3-compiler-sfc/-/frame3-compiler-sfc-1.1.5.tgz#1a500a2f5ecf9aab225294fe4f6a504e5e32759f"
-  integrity sha512-IUnc3rcOs5LOafSJ4V6o1aKqHmhWUg1o5HRxiDRn/WBTs7v05D47y6/fEvf6NT1CsQX3MKBDGzxc9iVfBxlY7Q==
+frame3-compiler-sfc@1.1.7:
+  version "1.1.7"
+  resolved "https://registry.npmjs.org/frame3-compiler-sfc/-/frame3-compiler-sfc-1.1.7.tgz#0788648928e1cbd3abc56e33f27d3464524c49d2"
+  integrity sha512-O6SBQIJgDVreTbZ0d2YLpTKy2jKVSaaVlNKsTi7lwjhDG10z6RLfBJzvPBZlQ5KSie3unI/QX+QUn84L5s+fQA==
   dependencies:
     "@babel/generator" "^7.20.14"
     "@babel/parser" "^7.20.15"
@@ -389,18 +389,18 @@ frame3-compiler-sfc@1.1.5:
     process "^0.11.10"
     string-iterator "^0.0.1"
 
-frame3-runtime-core@1.1.8:
-  version "1.1.8"
-  resolved "https://registry.npmjs.org/frame3-runtime-core/-/frame3-runtime-core-1.1.8.tgz#5f832268141c016295c20415a9ddb2e656f77330"
-  integrity sha512-npKMRd64lSHsE9VrgdHqCO/HA4Zda3UvFEXK06HBO8YhVmFENpDt+oasoq+IgRMI5Pk3AU1lGwug4KpWX0YlvQ==
-
-frame3@^1.1.6:
+frame3-runtime-core@1.1.9:
   version "1.1.9"
-  resolved "https://registry.npmjs.org/frame3/-/frame3-1.1.9.tgz#452c3a05ac030fbb3f42c492adf590a2b7fc91d7"
-  integrity sha512-vT+mVYuQJDawt3DNx2ydyyKcVZPEPYrL1uHgYiG67Y61aUK81oNjBUWCL4M+alIwbDkSUg2WnNnvpc8jQDBdcQ==
+  resolved "https://registry.npmjs.org/frame3-runtime-core/-/frame3-runtime-core-1.1.9.tgz#fbf1b87b0d109f166a9c997d5403eee4efbd216e"
+  integrity sha512-enNYoy4gSiyIH+DnaccC8B25UtvCSlCXmeu6XH8Bz3PUQpwN9b8L/95sehg0oHNoyvP5FsQHjmUoRMDmpKlA+g==
+
+frame3@^1.1.11:
+  version "1.1.11"
+  resolved "https://registry.npmjs.org/frame3/-/frame3-1.1.11.tgz#3692d877de240fce8b8840185227785b46050d19"
+  integrity sha512-Sy5QzqMiEZhP7FB+5GBm6jxIWYWPB6xcCyo2yeKGqER3UCBn7YdojIcOoW6dGzX0RAUfwASxhDR1lauEz936ow==
   dependencies:
-    frame3-compiler-sfc "1.1.5"
-    frame3-runtime-core "1.1.8"
+    frame3-compiler-sfc "1.1.7"
+    frame3-runtime-core "1.1.9"
 
 fsevents@~2.3.2:
   version "2.3.2"
@@ -411,11 +411,6 @@ function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
-
-github-markdown-css@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.npmjs.org/github-markdown-css/-/github-markdown-css-5.2.0.tgz#9f9e30f16cbc1d3b76110667b7c36ca3d96c9cdc"
-  integrity sha512-hq5RaCInSUZ48bImOZpkppW2/MT44StRgsbsZ8YA4vJFwLKB/Vo3k7R2t+pUGqO+ThG0QDMi96TewV/B3vyItg==
 
 globals@^11.1.0:
   version "11.12.0"
@@ -433,11 +428,6 @@ has@^1.0.3:
   integrity sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
   dependencies:
     function-bind "^1.1.1"
-
-highlight.js@^11.7.0:
-  version "11.7.0"
-  resolved "https://registry.npmjs.org/highlight.js/-/highlight.js-11.7.0.tgz#3ff0165bc843f8c9bce1fd89e2fda9143d24b11e"
-  integrity sha512-1rRqesRFhMO/PRF+G86evnyJkCgaZFOI+Z6kdj15TA18funfoqJXvgPCLSf0SWq3SRfg1j3HlDs8o4s3EGq1oQ==
 
 ieee754@^1.2.1:
   version "1.2.1"
@@ -581,12 +571,12 @@ uc.micro@^1.0.1, uc.micro@^1.0.5:
   resolved "https://registry.npmjs.org/uc.micro/-/uc.micro-1.0.6.tgz#9c411a802a409a91fc6cf74081baba34b24499ac"
   integrity sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
 
-vite-plugin-frame3@^1.1.5:
-  version "1.1.7"
-  resolved "https://registry.npmjs.org/vite-plugin-frame3/-/vite-plugin-frame3-1.1.7.tgz#4af3f0b41b92862b5c9767ba33ac41ba1570fd68"
-  integrity sha512-sLPCE/sajp5o7BSdKxw6QyQqK5ZiwpykdrOoRmMh7rFzuWs+STdqhsd1/JFCYB0AMiXOeMcYSyy2IfuHgjJ4dg==
+vite-plugin-frame3@^1.1.10:
+  version "1.1.10"
+  resolved "https://registry.npmjs.org/vite-plugin-frame3/-/vite-plugin-frame3-1.1.10.tgz#2eac016b71ee9c6526019555b1da43ae10ecdc98"
+  integrity sha512-OmaaFQij+1QGILdyM/d9TxwXHJVwOvetJ2ev54ZcmBNCoY9PALBQLAKQiamd7kpMISzVJGNILBF7a56EupvZTg==
   dependencies:
-    frame3-compiler-sfc "1.1.5"
+    frame3-compiler-sfc "1.1.7"
     vite "^4.1.4"
 
 vite@^4.1.0, vite@^4.1.4:

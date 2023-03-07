@@ -8,19 +8,18 @@
 		"build": "tsc && vite build && cp -r articles docs",
 		"preview": "vite preview",
 		"comp": "node ./scripts/comp.cjs",
-		"up": "yarn add frame3 && yarn add -D vite-plugin-frame3"
+		"up": "yarn add frame3 && yarn add -D vite-plugin-frame3",
+		"serve": "set NODE_ENV=development && tsc && vite build && cp -r articles docs && http-server docs"
 	},
 	"devDependencies": {
 		"@types/markdown-it": "^12.2.3",
 		"@types/node": "^18.14.5",
 		"typescript": "^4.9.3",
 		"vite": "^4.1.0",
-		"vite-plugin-frame3": "^1.1.5"
+		"vite-plugin-frame3": "^1.1.10"
 	},
 	"dependencies": {
-		"frame3": "^1.1.6",
-		"github-markdown-css": "^5.2.0",
-		"highlight.js": "^11.7.0",
+		"frame3": "^1.1.11",
 		"markdown-it": "^13.0.1"
 	}
 }

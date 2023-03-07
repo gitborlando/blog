@@ -1,0 +1,25 @@
+.list {
+	width: 100%;
+}
+
+.p {
+	width: 100%;
+}
+
+.block {
+	width: 100%;
+	margin-top: 30px;
+	user-select: none;
+}
+
+.title {
+	font-weight: 1000;
+	font-size: 25px;
+	margin-block: 20px;
+	cursor: pointer;
+	color: rgb(45, 45, 45);
+}
+.title:hover {
+	text-decoration: underline;
+	color: black;
+}
